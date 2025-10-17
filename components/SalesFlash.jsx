@@ -96,7 +96,7 @@ const HomeProducts = () => {
       </div>
 
       {/* Swiper Slider */}
-      <div className="w-full mt-8 relative pb-12">
+      <div className="w-full mt-8 relative pb-16">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={14}
@@ -112,7 +112,7 @@ const HomeProducts = () => {
             1024: { slidesPerView: 4 },
             1280: { slidesPerView: 5 },
           }}
-          pagination={{ clickable: true }}
+
           className="pb-10"
         >
           {products.slice(0, 20).map((product, index) => (
@@ -139,6 +139,15 @@ const HomeProducts = () => {
           background: #3b82f6;
           width: 10px;
           height: 10px;
+        }
+        .custom-pagination {
+          position: absolute;
+          bottom: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          justify-content: center;
+          gap: 6px;
         }
       `}</style>
     </div>
