@@ -43,7 +43,7 @@ export default function MusicExperienceSection() {
     <section className="relative overflow-hidden bg-gradient-to-r from-black via-gray-900 to-black text-white rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto my-16 shadow-2xl">
       {/* 💫 Moving gradient background */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-transparent to-green-500/10"
+        className="absolute inset-0 bg-gradient-to-r"
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -139,7 +139,7 @@ export default function MusicExperienceSection() {
             alt="JBL Speaker"
             width={500}
             height={400}
-            className="drop-shadow-[0_0_40px_rgba(0,255,0,0.6)]"
+            className="drop-shadow]"
           />
         </motion.div>
       </motion.div>
